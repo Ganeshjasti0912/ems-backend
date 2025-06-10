@@ -1,9 +1,9 @@
 import User from '../models/User.js';
 import bcrypt from 'bcryptjs';
-import Employee from '../models/employee.js';
+import Employee from '../models/Employee.js';
 import multer from 'multer';
 import Path from 'path';
-import Department from '../models/department.js';
+import Department from '../models/Department.js';
 
 // Configure multer for image upload
 const storage = multer.diskStorage({
