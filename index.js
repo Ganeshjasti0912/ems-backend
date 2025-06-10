@@ -17,7 +17,7 @@ connectDB(); // Connect to MongoDB
 const app = express();
 app.use(cors(
   {
-    origin:"https://ems-frontend-1-rosy.vercel.app/",
+    origin:'https://ems-frontend-green.vercel.app','https://ems-frontend-1-rosy.vercel.app/',
     credentials: true, // Allow credentials (cookies, authorization headers, etc.)
   }
 ));
