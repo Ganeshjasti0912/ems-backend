@@ -15,7 +15,12 @@ dotenv.config(); // Load environment variables
 connectDB(); // Connect to MongoDB
 
 const app = express();
-app.use(cors());
+app.use(cors(
+  {
+    origin:"https://ems-frontend-1-rosy.vercel.app/",
+    credentials: true, // Allow credentials (cookies, authorization headers, etc.)
+  }
+));
 app.use(express.json());
 app.use(express.static('public/uploads')); // Serve static files from 'public' directory
 app.use('/api/auth', authRouter);
