@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import Employee from "./employee.js";
+import Employee from "./Employee.js";
 import Leave from "./Leave.js";
 import Salary from "./Salary.js";
 import User from "./User.js";
